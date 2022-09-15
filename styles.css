@@ -53,7 +53,27 @@ main {
   gap: 24px;
   margin: 36px auto;
   text-align: center;
-  animation: toTop 400ms;
+  animation: toTop 200ms backwards;
+}
+
+main section {
+  animation: toTop 700ms backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+main section:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+main section:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+main section:nth-child(4) {
+  animation-delay: 700ms;
 }
 
 section {
@@ -110,6 +130,10 @@ section ul li:hover {
 .tech-list img {
   border-radius: 50%;
   width: 16px;
+}
+
+.outer {
+  margin-bottom: 36px;
 }
 
 /* Animation */
