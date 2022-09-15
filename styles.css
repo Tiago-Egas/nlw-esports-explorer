@@ -4,16 +4,28 @@
   box-sizing: border-box;
 }
 
-header img {
-  margin: 0 auto;
-  border-radius: 50%;
-  width: 185px;
-  background-image: linear-gradient(210deg, #c03396 0%, #40bb9c 45%, #9a72e6 85%);
-  padding: 5px;
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+header {
+  padding-top: 32px;
+  height: calc(180px + 32px);
+}
 
+header div {
+  width: 180px;
+  margin: auto;
+  display: flex;
+  transition-duration: 250ms;
+  animation: fromTop 600ms 300ms backwards;
+}
+
+header div:hover {
+  transform: scale(1.13);
+}
+
+header div img {
+  width: 100%;
+  background-image: linear-gradient(210deg, #c03396 0%, #40bb9c 45%, #9a72e6 85%);
+  padding: 4px;
+  border-radius: 50%;
 }
 
 ul {
@@ -39,15 +51,14 @@ main {
   margin: auto;
   display: grid;
   gap: 24px;
-  margin-top: 36px;
+  margin: 36px auto;
   text-align: center;
+  animation: toTop 400ms;
 }
 
 section {
   color: azure;
   background-image: linear-gradient(95deg, #c03396 0%, #40bb9c 45%, #9a72e6 85%);
-  padding-top: 1px;
-  padding-left: 1px;
   padding-bottom: 3px;
   padding-right: 3px;
   border-radius: 14px;
@@ -72,18 +83,28 @@ section p {
 section ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 22px;
   margin-top: 24px;
   justify-content: center;
 }
 
+section ul li {
+  transition-duration: 250ms;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
 .games-list img {
   width: 110px;
+  border: 1px solid #9a72e6;
 }
 
 .channel-list img {
   border-radius: 50%;
   width: 65px;
+  border: 1px solid #9a72e6;
 }
 
 .tech-list img {
@@ -91,6 +112,28 @@ section ul {
   width: 16px;
 }
 
-.outer {
-  margin-bottom: 64px;
+/* Animation */
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toTop {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
