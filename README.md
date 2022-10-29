@@ -1,5 +1,5 @@
 <h1 align="center">
-    NLW 
+    NLW eSports - Trilha Explorer
 </h1>
 
 <p align="center">
