@@ -19,3 +19,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Este projeto foi desenvolvido durante a **[Next Level Week eSports](https://nextlevelweek.com/)**, realizada pela **[@Rocketseat 💜](https://github.com/Rocketseat)**.
 
 Meu perfil na Rocketseat: (https://app.rocketseat.com.br/me/tiago-egas).
+.
