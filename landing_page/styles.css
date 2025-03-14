@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding-top: 32px;
+  height: calc(180px + 32px);
+}
+
+header div {
+  width: 180px;
+  margin: auto;
+  display: flex;
+  transition-duration: 250ms;
+  animation: fromTop 600ms 300ms backwards;
+}
+
+header div:hover {
+  transform: scale(1.13);
+}
+
+header div img {
+  width: 100%;
+  background-image: linear-gradient(210deg, #c03396 0%, #40bb9c 45%, #9a72e6 85%);
+  padding: 4px;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(./assets/bg.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;
+}
+
+body * {
+  font-family: 'Inter', sans-serif;
+  line-height: 160%;
+}
+
+main {
+  max-width: 580px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 24px;
+  margin: 36px auto;
+  text-align: center;
+  animation: toTop 200ms backwards;
+}
+
+main section {
+  animation: toTop 700ms backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+main section:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+main section:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+main section:nth-child(4) {
+  animation-delay: 700ms;
+}
+
+section {
+  color: azure;
+  background-image: linear-gradient(95deg, #c03396 0%, #40bb9c 45%, #9a72e6 85%);
+  padding-bottom: 3px;
+  padding-right: 3px;
+  border-radius: 14px;
+}
+
+section div {
+  background-color: #2A2634;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 12px;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+}
+
+section p {
+  letter-spacing: -0.65px;
+  color: #A1A1AA;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+section ul li {
+  transition-duration: 250ms;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.games-list img {
+  width: 110px;
+  border: 1px solid #9a72e6;
+}
+
+.channel-list img {
+  border-radius: 50%;
+  width: 65px;
+  border: 1px solid #9a72e6;
+}
+
+.tech-list img {
+  border-radius: 50%;
+  width: 16px;
+}
+
+.outer {
+  margin-bottom: 36px;
+}
+
+/* Animation */
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toTop {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

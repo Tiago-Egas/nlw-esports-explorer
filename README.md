@@ -1,9 +1,7 @@
-<h1 align="center">
-    NLW eSports - Trilha Explorer
-</h1>
+# NLW eSports - Trilha Explorer
 
 <p align="center">
-  <img alt="NLW eSports" src="./assets/preview.jpg" width="100%">
+  <img alt="NLW eSports" src="./landing_page/assets/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -16,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-## Este projeto foi desenvolvido durante a **[Next Level Week eSports](https://nextlevelweek.com/)**, realizada pela **[@Rocketseat 💜](https://github.com/Rocketseat)**.
+## Este projeto foi desenvolvido durante a **[Next Level Week eSports](https://nextlevelweek.com/)**, realizada pela **[@Rocketseat 💜](https://github.com/Rocketseat)**
 
 Meu perfil, atualizado, na Rocketseat:
-(https://app.rocketseat.com.br/me/tiago-egas). .
+(<https://app.rocketseat.com.br/me/tiago-egas>). .
